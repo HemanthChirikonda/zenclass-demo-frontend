@@ -44,7 +44,7 @@ document.body.append(container);
 
 
  async function fetchdata(){
-  let stringdata= await fetch('http://localhost:3030/students');
+  let stringdata= await fetch('https://zenclass-demo-server.herokuapp.com/students');
   let data= await stringdata.json();
   console.log(data);
   let card= document.createElement('div');
@@ -65,7 +65,7 @@ document.body.append(container);
   document.getElementById('studentsdisplay').append(card);
 
 
-  let stringdata1= await fetch('http://localhost:3030/mentors');
+  let stringdata1= await fetch('https://zenclass-demo-server.herokuapp.com/mentors');
   let data1= await stringdata1.json();
   console.log(data1);
   let card1= document.createElement('div');

@@ -47,7 +47,7 @@ document.body.append(container);
 
 
 async function postdata(){
-await fetch('http://localhost:3030/student',{
+await fetch('https://zenclass-demo-server.herokuapp.com/student',{
 method:'POST',
 headers: {
     'Content-Type': 'application/json'

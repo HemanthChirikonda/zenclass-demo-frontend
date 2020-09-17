@@ -93,7 +93,7 @@ document.body.append(container);
 
 
 async function postdata(){
-    await fetch('http://localhost:3030/mentor',{
+    await fetch('https://zenclass-demo-server.herokuapp.com/mentor',{
     method:'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -118,7 +118,7 @@ async function postdata(){
 
     async function getdata(){
 
-        let stringdata1= await fetch('http://localhost:3030/mentors');
+        let stringdata1= await fetch('https://zenclass-demo-server.herokuapp.com/mentors');
         let data1= await stringdata1.json();
         data1.forEach(element => {
             let option= document.createElement('option');
@@ -127,7 +127,7 @@ async function postdata(){
             selectmentor.append(option);
         });
 
-        let stringdata= await fetch('http://localhost:3030/students');
+        let stringdata= await fetch('https://zenclass-demo-server.herokuapp.com/students');
         let data= await stringdata.json();
            data.forEach(element => {
                if(!element.mentor){
@@ -143,7 +143,7 @@ getdata();
 
 async function postassigndata(){
     try {
-        await fetch('http://localhost:3030/assignmentor',{
+        await fetch('https://zenclass-demo-server.herokuapp.com/assignmentor',{
     method:'POST',
     headers: {
         'Content-Type': 'application/json'
