@@ -75,11 +75,17 @@ document.body.append(container);
     carddiv1.classList.add('col-3',)
     
      carddiv1.innerHTML =`<div class="card text-white bg-success mb-2" style="max-width: 12rem;">
-      
-      <div class="card-body" style="height:150px">
+     <div class="card-header">${element._id}</div
+      <div class="card-body"  id="${element._id}" style="height:150px">
       <h5 class="card-title mt-4"> ${element.name} </h5>
       </div>
     </div>`
+    if(element.mentorId){
+      let mentorid= document.createElement('p');
+  mentorid.classList.add('card-title',' mt-4');
+  mentorid.innerText=element.mentorId;
+      document.getElementById("${element._id}").append(mentorid);
+    }
   card1.append(carddiv1);
   });
     
