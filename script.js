@@ -80,7 +80,7 @@ document.body.append(container);
       <h5 class="card-title mt-4"> ${element.name} </h5>
       </div>
     </div>`
-    if(element.mentorId){
+    if(element.mentorId !== undefined){
       let mentorid= document.createElement('p');
   mentorid.classList.add('card-title',' mt-4');
   mentorid.innerText=element.mentorId;
