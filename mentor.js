@@ -130,7 +130,7 @@ async function postdata(){
         let stringdata= await fetch('https://zenclass-demo-server.herokuapp.com/students');
         let data= await stringdata.json();
            data.forEach(element => {
-               if(!element.mentor){
+               if(!element.mentorId){
                 let option= document.createElement('option');
                 option.value= element._id;
                 option.innerText=element.name;
