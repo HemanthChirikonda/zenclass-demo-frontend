@@ -53,8 +53,7 @@ document.body.append(container);
     let carddiv= document.createElement('div');
     carddiv.classList.add('col-3',)
      carddiv.innerHTML =`<div class="card text-white bg-primary mb-2" style="max-width: 12rem;">
-     <i class="fa fa-user-o" aria-hidden="true"></i>
-     
+     <div class="card-header">${element._id}</div>
       <div class="card-body">
         <h5 class="card-title">${element.name} </h5>
       </div>
@@ -75,16 +74,19 @@ document.body.append(container);
     carddiv1.classList.add('col-3',)
     
      carddiv1.innerHTML =`<div class="card text-white bg-success mb-2" style="max-width: 12rem;">
-     <div class="card-header">${element._id}</div
+     <div class="card-header">${element._id}</div>
       <div class="card-body"  id="${element._id}" style="height:150px">
       <h5 class="card-title mt-4"> ${element.name} </h5>
       </div>
     </div>`
-    if(element.mentorId !== undefined){
-      let mentorid= document.createElement('p');
-  mentorid.classList.add('card-title',' mt-4');
-  mentorid.innerText=element.mentorId;
-      document.getElementById("${element._id}").append(mentorid);
+    if(element.students !== undefined){
+      element.students.forEach(element1 => {
+        let mentorid= document.createElement('p');
+        mentorid.classList.add('card-title',' mt-4');
+        mentorid.innerText=element1;
+        document.getElementById(''+element._id+'').append(mentorid);
+      });
+  
     }
   card1.append(carddiv1);
   });
