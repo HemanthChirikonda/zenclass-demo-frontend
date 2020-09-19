@@ -58,11 +58,12 @@ document.body.append(container);
         <h5 class="card-title">${element.name} </h5>
       </div>
     </div>`
-    if(element.mentorId != undefined){
+    if(element.mentorId){
       let mentorid= document.createElement('p');
       mentorid.classList.add('card-title','mt-4');
       mentorid.innerText=''+element.mentorId+'';
-      document.getElementById(element._id).append(mentorid);
+      (document.getElementById(element._id)).append(mentorid);
+      console.log(document.getElementById(element._id))
     }
 
 
@@ -96,7 +97,7 @@ document.body.append(container);
       let studentid= document.createElement('p');
       studentid.classList.add('card-title','mt-4');
       studentid.innerText=''+ele+'';
-      document.getElementById(element._id).append(studentid);
+      (document.getElementById(element._id)).append(studentid);
     });
 
   }
