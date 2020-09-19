@@ -58,7 +58,7 @@ document.body.append(container);
         <h5 class="card-title">${element.name} </h5>
       </div>
     </div>`
-    if(element.mentorId){
+    if(element.mentorId != undefined){
       let mentorid= document.createElement('p');
       mentorid.classList.add('card-title',' mt-4');
       mentorid.innerText=element1;
@@ -90,7 +90,7 @@ document.body.append(container);
       </div>
     </div>`
    
-    if(element.students.length > -1){
+    if(element.students != undefined){
       element.students.forEach(element1 => {
         let studentid= document.createElement('p');
         studentid.classList.add('card-title',' mt-4');
