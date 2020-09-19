@@ -81,7 +81,7 @@ document.body.append(container);
       <div class="card-body"  id="${element._id}" style="height:150px">
       <h5 class="card-title mt-4"> ${element.name} </h5>
       <p class="card-title mt-4"> ${element.Mobile_number} </p>
-      <p class="card-title mt-4"> ${element.E-Mail} </p>
+      <p class="card-title mt-4"> ${element.E_Mail} </p>
       </div>
     </div>`
    

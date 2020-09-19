@@ -102,7 +102,7 @@ async function postdata(){
       body: JSON.stringify({
           "name": document.getElementById('name').value,
           "Mobile_number": document.getElementById( 'mobileNumber'),
-          "E-Mail":document.getElementById('emil')
+          "E_Mail":document.getElementById('emil')
       })
     })
     alert('Mentor created');
