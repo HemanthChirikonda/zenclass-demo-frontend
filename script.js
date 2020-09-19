@@ -94,7 +94,7 @@ document.body.append(container);
   if(element.students.length > -1){
     element.students.forEach(element1 => {
       let studentid= document.createElement('p');
-      studentid.classList.add('card-title',' mt-4');
+      studentid.classList.add('card-title','mt-4');
       studentid.innerText=element1;
       document.getElementById(''+element._id+'').append(studentid);
     });
