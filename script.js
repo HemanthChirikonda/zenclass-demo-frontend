@@ -58,7 +58,12 @@ document.body.append(container);
         <h5 class="card-title">${element.name} </h5>
       </div>
     </div>`
-
+    if(element.mentorId){
+      let mentorid= document.createElement('p');
+      mentorid.classList.add('card-title',' mt-4');
+      mentorid.innerText=element1;
+      document.getElementById(''+element._id+'').append(mentorid);
+    }
 
 
   card.append(carddiv);
@@ -78,15 +83,22 @@ document.body.append(container);
     
      carddiv1.innerHTML =`<div class="card text-white bg-success mb-2" style="max-width: 12rem;">
      <div class="card-header">${element._id}</div>
-      <div class="card-body"  id="${element._id}">
+      <div class="card-body"  id="${element._id}" style="height:150px">
       <h5 class="card-title mt-4"> ${element.name} </h5>
       <p class="card-title mt-4"> ${element.mobile_number} </p>
       <p class="card-title mt-4"> ${element.email} </p>
       </div>
     </div>`
    
+    if(element.students.length > -1){
+      element.students.forEach(element1 => {
+        let studentid= document.createElement('p');
+        studentid.classList.add('card-title',' mt-4');
+        studentid.innerText=element1;
+        document.getElementById(''+element._id+'').append(studentid);
+      });
   
-    
+    }
   card1.append(carddiv1);
   });
     
