@@ -90,7 +90,7 @@ document.body.append(container);
       </div>
     </div>`
    
-    if(element.students != undefined){
+    if(element.students.length > -1){
       element.students.forEach(element1 => {
         let studentid= document.createElement('p');
         studentid.classList.add('card-title',' mt-4');
