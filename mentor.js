@@ -37,14 +37,14 @@ let mobileNumber= document.createElement('input');
 mobileNumber.id='mobileNumber';
 mobileNumber.classList.add('col-12','ml-5','mr-5','mt-5')
 mobileNumber.type='text';
-mobileNumber.requried=true;
+
 mobileNumber.placeholder='Mobile Number';
 display.append(mobileNumber);
 let emil= document.createElement('input');
 emil.id='emil';
 emil.classList.add('col-12','ml-5','mr-5','mt-5')
 emil.type='email';
-emil.requried=true;
+
 emil.placeholder='Email';
 display.append(emil);
 let namebtn= document.createElement('submit');
@@ -101,10 +101,9 @@ async function postdata(){
       },
       body: JSON.stringify({
           "name": document.getElementById('name').value,
-          "Mobile number": document.getElementById( 'mobileNumber'),
+          "Mobile_number": document.getElementById( 'mobileNumber'),
           "E-Mail":document.getElementById('emil')
       })
-    
     })
     alert('Mentor created');
     }
