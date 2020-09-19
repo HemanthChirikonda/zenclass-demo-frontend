@@ -64,7 +64,6 @@ document.body.append(container);
     mentorid.classList.add('card-title','mt-4');
     mentorid.innerText=''+element.mentorId+'';
     card.append(mentorid);
-    console.log(document.getElementById(element._id))
   }
   });
     
