@@ -58,13 +58,14 @@ document.body.append(container);
         <h5 class="card-title">${element.name} </h5>
       </div>
     </div>`
+    if(element.mentorId){
+      let mentorid= document.createElement('p');
+      mentorid.classList.add('mt-1','border','rounded','bg-primary');
+      mentorid.innerText=''+element.mentorId+'';
+      carddiv.append(mentorid);
+    }
   card.append(carddiv);
-  if(element.mentorId){
-    let mentorid= document.createElement('p');
-    mentorid.classList.add('card-title','mt-4');
-    mentorid.innerText=''+element.mentorId+'';
-    card.append(mentorid);
-  }
+
   });
     
   document.getElementById('studentsdisplay').append(card);
@@ -79,19 +80,19 @@ document.body.append(container);
     let carddiv1= document.createElement('div');
     carddiv1.classList.add('col-3',)
     
-     carddiv1.innerHTML =`<div class="card text-white bg-success mb-2" style="max-width: 12rem;">
+     carddiv1.innerHTML =`<div class="card text-white bg-success mb-2" style="max-width: 14rem;">
      <div class="card-header">${element._id}</div>
       <div class="card-body"  id="${element._id}" style="height:150px">
-      <h5 class="card-title mt-4"> ${element.name} </h5>
-      <p class="card-title mt-4"> ${element.mobile_number} </p>
-      <p class="card-title mt-4"> ${element.email} </p>
+      <h5 class="card-title mt-3"> ${element.name} </h5>
+      <p class="card-title mt-3"> ${element.mobile_number} </p>
+      <p class="card-title mt-1"> ${element.email} </p>
       </div>
     </div>`
 
     if(element.students.length > -1){
       element.students.forEach((ele) => {
         let studentid= document.createElement('p');
-        studentid.classList.add('mt-4','bg-primary');
+        studentid.classList.add('mt-1','border','rounded','bg-primary');
         studentid.innerText='Mentor ID'+''+ele+'';
         carddiv1.append(studentid);
       });
