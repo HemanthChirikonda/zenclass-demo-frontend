@@ -80,8 +80,8 @@ document.body.append(container);
      <div class="card-header">${element._id}</div>
       <div class="card-body"  id="${element._id}">
       <h5 class="card-title mt-4"> ${element.name} </h5>
-      <p class="card-title mt-4"> ${element.Mobile_number} </p>
-      <p class="card-title mt-4"> ${element.E_Mail} </p>
+      <p class="card-title mt-4"> ${element.mobile_number} </p>
+      <p class="card-title mt-4"> ${element.email} </p>
       </div>
     </div>`
    
