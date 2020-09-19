@@ -60,7 +60,7 @@ document.body.append(container);
     </div>`
     if(element.mentorId != undefined){
       let mentorid= document.createElement('p');
-      mentorid.classList.add('card-title',' mt-4');
+      mentorid.classList.add('card-title','mt-4');
       mentorid.innerText=element1;
       document.getElementById(''+element._id+'').append(mentorid);
     }
