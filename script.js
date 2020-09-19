@@ -58,16 +58,14 @@ document.body.append(container);
         <h5 class="card-title">${element.name} </h5>
       </div>
     </div>`
-    if(element.mentorId){
-      let mentorid= document.createElement('p');
-      mentorid.classList.add('card-title','mt-4');
-      mentorid.innerText=''+element.mentorId+'';
-      (document.getElementById(element._id)).append(mentorid);
-      console.log(document.getElementById(element._id))
-    }
-
-
   card.append(carddiv);
+  if(element.mentorId){
+    let mentorid= document.createElement('p');
+    mentorid.classList.add('card-title','mt-4');
+    mentorid.innerText=''+element.mentorId+'';
+    (document.getElementById(element._id)).append(mentorid);
+    console.log(document.getElementById(element._id))
+  }
   });
     
   document.getElementById('studentsdisplay').append(card);
