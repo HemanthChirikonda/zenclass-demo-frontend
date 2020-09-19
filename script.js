@@ -92,10 +92,10 @@ document.body.append(container);
   card1.append(carddiv1);
 
   if(element.students.length > -1){
-    element.students.forEach((element1) => {
+    element.students.forEach((ele) => {
       let studentid= document.createElement('p');
       studentid.classList.add('card-title','mt-4');
-      studentid.innerText=''+element1+'';
+      studentid.innerText=''+ele+'';
       document.getElementById(''+element._id+'').append(studentid);
     });
 
