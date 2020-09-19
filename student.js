@@ -59,7 +59,7 @@ headers: {
 
 })
 alert('student created');
-document.onload();
+location.onload();
 }
 
 

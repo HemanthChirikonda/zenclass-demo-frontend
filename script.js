@@ -90,7 +90,7 @@ document.body.append(container);
       </div>
     </div>`
 
-    if(element.students.length > -1){
+    if(element.students != undefined){
       element.students.forEach((ele) => {
         let studentid= document.createElement('p');
         studentid.classList.add('mt-1','border','rounded','bg-primary');

@@ -106,12 +106,13 @@ async function postdata(){
       })
     })
     alert('Mentor created');
+    location.reload();
     }
     
     
     document.getElementById('submit').addEventListener('click',()=>{
     postdata();
-    document.onload();
+    
     });
 
 
@@ -157,6 +158,7 @@ async function postassigndata(){
     
     })
     alert('Mentor assigned');
+    location.reload();
     } catch (error) {
         alert(error);
     }
@@ -164,5 +166,5 @@ async function postassigndata(){
 
     document.getElementById('assignsubmit').addEventListener('click',()=>{
         postassigndata();
-        document.onload();
+        
         });
