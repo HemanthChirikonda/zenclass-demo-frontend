@@ -60,7 +60,8 @@ document.body.append(container);
     </div>`
     if(element.mentorId){
       let mentorid= document.createElement('p');
-      mentorid.classList.add('mt-1','border','rounded','bg-primary');
+      mentorid.classList.add('mt-1','border','rounded','bg-success');
+      mentorid.style.maxWidth=12+'rem';
       mentorid.innerText=''+element.mentorId+'';
       carddiv.append(mentorid);
     }
@@ -93,7 +94,8 @@ document.body.append(container);
       element.students.forEach((ele) => {
         let studentid= document.createElement('p');
         studentid.classList.add('mt-1','border','rounded','bg-primary');
-        studentid.innerText='Mentor ID'+''+ele+'';
+        studentid.style.maxWidth=14+'rem'
+        studentid.innerText='student_Id :'+''+ele+'';
         carddiv1.append(studentid);
       });
   card1.append(carddiv1);
