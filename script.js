@@ -62,7 +62,7 @@ document.body.append(container);
       let mentorid= document.createElement('p');
       mentorid.classList.add('mt-1','row','border','rounded','bg-success');
       mentorid.style.maxWidth=13+'rem';
-      mentorid.innerText='Mentor ID:' +''+element.mentorId+'';
+      mentorid.innerText='MentorID:'+' '+''+element.mentorId+'';
       carddiv.append(mentorid);
     }
   card.append(carddiv);
@@ -95,7 +95,7 @@ document.body.append(container);
         let studentid= document.createElement('p');
         studentid.classList.add('mt-1','row','border','rounded','bg-primary');
         studentid.style.maxWidth=14+'rem'
-        studentid.innerText='student_Id :'+''+ele+'';
+        studentid.innerText='studentId:'+'  '+''+ele+'';
         carddiv1.append(studentid);
       });
   card1.append(carddiv1);
