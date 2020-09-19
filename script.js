@@ -61,7 +61,7 @@ document.body.append(container);
     if(element.mentorId){
       let mentorid= document.createElement('p');
       mentorid.classList.add('mt-1','border','rounded','bg-success');
-      mentorid.style.maxWidth=12+'rem';
+      mentorid.style.maxWidth=13+'rem';
       mentorid.innerText=''+element.mentorId+'';
       carddiv.append(mentorid);
     }
