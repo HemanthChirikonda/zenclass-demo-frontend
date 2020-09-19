@@ -59,11 +59,11 @@ headers: {
 
 })
 alert('student created');
-location.onload();
+
 }
 
 
 document.getElementById('submit').addEventListener('click',()=>{
 postdata();
-
+location.onload();
 })
