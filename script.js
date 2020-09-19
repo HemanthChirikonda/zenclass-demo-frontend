@@ -78,7 +78,7 @@ document.body.append(container);
     
      carddiv1.innerHTML =`<div class="card text-white bg-success mb-2" style="max-width: 12rem;">
      <div class="card-header">${element._id}</div>
-      <div class="card-body"  id="${element._id}" style="height:150px">
+      <div class="card-body"  id="${element._id}">
       <h5 class="card-title mt-4"> ${element.name} </h5>
       <p class="card-title mt-4"> ${element.Mobile_number} </p>
       <p class="card-title mt-4"> ${element.E_Mail} </p>
