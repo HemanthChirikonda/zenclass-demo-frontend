@@ -111,7 +111,7 @@ async function postdata(){
     
     document.getElementById('submit').addEventListener('click',()=>{
     postdata();
-    
+    document.onload();
     });
 
 
@@ -164,5 +164,5 @@ async function postassigndata(){
 
     document.getElementById('assignsubmit').addEventListener('click',()=>{
         postassigndata();
-        
+        document.onload();
         });
