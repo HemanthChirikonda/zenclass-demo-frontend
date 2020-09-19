@@ -87,15 +87,17 @@ document.body.append(container);
       <p class="card-title mt-4"> ${element.email} </p>
       </div>
     </div>`
+
+    if(element.students.length > -1){
+      element.students.forEach((ele) => {
+        let studentid= document.createElement('p');
+        studentid.classList.add('mt-4','bg-primary');
+        studentid.innerText='Mentor ID'+''+ele+'';
+        carddiv1.append(studentid);
+      });
   card1.append(carddiv1);
 
-  if(element.students.length > -1){
-    element.students.forEach((ele) => {
-      let studentid= document.createElement('p');
-      studentid.classList.add('card-title','mt-4');
-      studentid.innerText=''+ele+'';
-      card1.append(studentid);
-    });
+ 
 
   }
   });
