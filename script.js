@@ -2,7 +2,7 @@ let container = document.createElement('div');
 container.classList.add('container')
 let  navdiv=document.createElement('div');
 navdiv.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Zen Demo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -12,7 +12,7 @@ navdiv.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="./student.html">Student</a>
       <a class="nav-link" href="./mentor.html">Mentor</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      
     </div>
   </div>
 </nav>`
@@ -60,9 +60,9 @@ document.body.append(container);
     </div>`
     if(element.mentorId){
       let mentorid= document.createElement('p');
-      mentorid.classList.add('mt-1','border','rounded','bg-success');
+      mentorid.classList.add('mt-1','row','border','rounded','bg-success');
       mentorid.style.maxWidth=13+'rem';
-      mentorid.innerText=''+element.mentorId+'';
+      mentorid.innerText='Mentor ID:' +''+element.mentorId+'';
       carddiv.append(mentorid);
     }
   card.append(carddiv);
@@ -93,7 +93,7 @@ document.body.append(container);
     if(element.students != undefined){
       element.students.forEach((ele) => {
         let studentid= document.createElement('p');
-        studentid.classList.add('mt-1','border','rounded','bg-primary');
+        studentid.classList.add('mt-1','row','border','rounded','bg-primary');
         studentid.style.maxWidth=14+'rem'
         studentid.innerText='student_Id :'+''+ele+'';
         carddiv1.append(studentid);

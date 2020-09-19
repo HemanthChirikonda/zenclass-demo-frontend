@@ -4,7 +4,7 @@ let container = document.createElement('div');
 container.classList.add('container')
 let  navdiv=document.createElement('div');
 navdiv.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Zen Demo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -13,7 +13,7 @@ navdiv.innerHTML=`<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="nav-link " href="./index.html">Home </a>
       <a class="nav-link active" href="./student.html">Student <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="./mentor.html">Mentor</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      
     </div>
   </div>
 </nav>`
