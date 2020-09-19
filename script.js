@@ -62,7 +62,7 @@ document.body.append(container);
       let mentorid= document.createElement('p');
       mentorid.classList.add('card-title','mt-4');
       mentorid.innerText=''+element.mentorId+'';
-      document.getElementById(''+element._id+'').append(mentorid);
+      document.getElementById(element._id).append(mentorid);
     }
 
 
@@ -96,7 +96,7 @@ document.body.append(container);
       let studentid= document.createElement('p');
       studentid.classList.add('card-title','mt-4');
       studentid.innerText=''+ele+'';
-      document.getElementById(''+element._id+'').append(studentid);
+      document.getElementById(element._id).append(studentid);
     });
 
   }
